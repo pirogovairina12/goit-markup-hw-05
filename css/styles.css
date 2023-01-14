@@ -406,10 +406,6 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
 }
 
-.skill-icon {
-
-}
-
 .header-container {
     display: flex;
     justify-content: space-between;
@@ -708,11 +704,6 @@ section.portfolio {
 }
 
 /*Modal*/
-
-.header-btn {
-
-}
-
 .backdrop {
     position: fixed;
     top: 0;
@@ -740,7 +731,6 @@ section.portfolio {
     background-color: #FCFCFC;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.14), 0 1px 3px rgba(0, 0, 0, 0.12), 0 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
-
     width: 408px;
     height: 576px;
 }
@@ -760,12 +750,4 @@ section.portfolio {
 
 .modal-btn-close:hover .modal-close-svg  {
     fill: #FFFFFF;
-}
-
-.modal-close-svg {
-
-}
-
-.modal-close-svg {
-
 }

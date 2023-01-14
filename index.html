@@ -11,8 +11,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
           rel="stylesheet">
     <link rel="stylesheet" type="" href="./css/styles.css">
-    <link rel="stylesheet"     href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-    <link rel="stylesheet"   href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" type="" href="./css/styles.css">
 </head>
@@ -46,7 +47,7 @@
     <section class="hero section hero-bg">
         <div class="container">
             <h1 class="header-title">Effective Solutions for Your Business</h1>
-            <button type="button" class="header-btn">Order Service</button>
+            <button type="button" class="header-btn" data-modal-open>Order Service</button>
         </div>
     </section>
 
@@ -390,11 +391,23 @@
         </div>
     </footer>
 </main>
+
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+        <button type="button" class="modal-btn-close"  data-modal-close>
+            <svg class="modal-close-svg" width="8px" height="8px">
+                <use class="modal-close-use" href="./images/close-modal.svg#icon-close-black-modal"></use>
+            </svg>
+        </button>
+    </div>
+</div>
+
+
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
     AOS.init();
 </script>
-<script src=""></script>
+<script src="./js/modal.js"></script>
 </body>
 
 </html>

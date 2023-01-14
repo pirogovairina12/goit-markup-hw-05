@@ -649,10 +649,6 @@ section.portfolio {
 }
 
 
-.portfolio-item {
-    position: relative;
-}
-
 .portfolio-item-hover {
     width: 360px;
     height: 300px;
@@ -668,9 +664,6 @@ section.portfolio {
     /*animation-direction: normal;*/
 }
 
-.portfolio-item-hover:hover {
-
-}
 
 .portfolio-item-hover p {
     font-weight: 400;
@@ -707,7 +700,7 @@ section.portfolio {
     left: 0;
     opacity: 0;
     transform: scaleX(0);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity  250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-item:hover::after {
@@ -715,4 +708,30 @@ section.portfolio {
     opacity: 1;
 }
 
+.portfolio-item-link::before {
+    display: inline-block;
+    content: '14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    background-color: var(--btn-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--our-team-bg-color);
+    padding: 40px 32px;
+    transform: translateY(100%);
+}
 
+.portfolio-item:hover .portfolio-item-link::before {
+    transform: translateY(0%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.portfolio-item {
+    position: relative;
+    overflow: hidden;
+}

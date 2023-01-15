@@ -742,3 +742,20 @@ section.portfolio {
 li.portfolio-item:hover{
     box-shadow: 0 1px 6px rgb(46 47 66 / 8%), 0 1px 1px rgb(46 47 66 / 16%), 0 2px 1px rgb(46 47 66 / 8%);
 }
+
+.current {
+    position: relative;
+}
+
+.current::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: #404BBF;
+    border-radius: 2px;
+    opacity: 1;
+}

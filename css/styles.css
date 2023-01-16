@@ -747,7 +747,7 @@ li.portfolio-item:hover{
     position: relative;
 }
 
-.current::after {
+.current::before {
     content: "";
     position: absolute;
     left: 0;
@@ -760,6 +760,11 @@ li.portfolio-item:hover{
     opacity: 1;
 }
 
-.header-item.header-link .current::after  {
-    color: var(--btn-color);
+/*.current::before a.header-link  {*/
+/*    color: #4D5AE5FF !important;*/
+/*}*/
+
+
+.current >.header-link{
+    color: #4D5AE5FF;
 }

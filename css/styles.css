@@ -760,10 +760,6 @@ li.portfolio-item:hover{
     opacity: 1;
 }
 
-/*.current::before a.header-link  {*/
-/*    color: #4D5AE5FF !important;*/
-/*}*/
-
 
 .current >.header-link{
     color: #4D5AE5FF;
